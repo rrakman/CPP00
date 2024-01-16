@@ -9,6 +9,11 @@ class PhoneBook
 {
     private:
         Contact myContacts[8];
+        unsigned int count;
     public:
-        void add();
+        void ADD();
+        void SEARCH();
+        void EXIT();
+        unsigned int max;
+
 };
