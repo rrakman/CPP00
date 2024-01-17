@@ -11,9 +11,11 @@ class PhoneBook
         Contact myContacts[8];
         unsigned int count;
     public:
+        PhoneBook();
         void ADD();
         void SEARCH();
         void EXIT();
         unsigned int max;
 
 };
+

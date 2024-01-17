@@ -8,19 +8,18 @@ int main()
     std::string input;
     PhoneBook   myPhoneBook;
 
-    std::cout<<"Welcome to my PhoneBook\n";
+    
     while(1)
     {
-        std::cout<<"usage : ADD SEARCH EXIT.\n";
         getline(std::cin,input);
         if(std::cin.eof())
         {
             std::cout<<"Dont't Forget : usage : ADD SEARCH EXIT.\n";
             break;
         }
-        if(input == "EXIT")
+        if(input == "EXIT" || input == "exit")
             break;
-        if(input == "ADD")
+        if(input == "ADD" || input == "add")
         {
             myPhoneBook.ADD();
         }
