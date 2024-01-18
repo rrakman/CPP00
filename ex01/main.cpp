@@ -30,7 +30,7 @@ int main()
         else
         {
             std::cout<<"USAGE: ADD SEARCH EXIT.\n";
-            std::cout<<"$>";
+            // std::cout<<"$>";
         }
     }
 }
