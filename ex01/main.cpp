@@ -11,21 +11,26 @@ int main()
     
     while(1)
     {
+        std::cout<<"$>";
         getline(std::cin,input);
         if(std::cin.eof())
         {
             std::cout<<"Dont't Forget : usage : ADD SEARCH EXIT.\n";
             break;
         }
-        if(input == "EXIT" || input == "exit")
+        if(input == "EXIT")
             break;
-        if(input == "ADD" || input == "add")
-        {
+        if(input == "ADD")
             myPhoneBook.ADD();
-        }
         else if(input == "SEARCH")
-            std::cout<<"searching ....\n";
+        {
+            myPhoneBook.SEARCH();
+
+        }
         else
-            std::cout<<"USAGE: add search exit\n";
+        {
+            std::cout<<"USAGE: ADD SEARCH EXIT.\n";
+            std::cout<<"$>";
+        }
     }
 }

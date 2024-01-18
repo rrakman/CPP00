@@ -8,14 +8,13 @@
 class PhoneBook
 {
     private:
-        Contact myContacts[8];
         unsigned int count;
+        Contact myContacts[8];
     public:
         PhoneBook();
+        std::string SetValues(std::string s);
+        std::string Get_values(std::string s);
         void ADD();
         void SEARCH();
-        void EXIT();
-        unsigned int max;
-
 };
 
