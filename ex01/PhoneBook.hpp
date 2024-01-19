@@ -1,6 +1,6 @@
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
-#endif
+
 #include <iostream>
 #include<string>
 #include"Contact.hpp"
@@ -18,3 +18,4 @@ class PhoneBook
         void SEARCH();
 };
 
+#endif
